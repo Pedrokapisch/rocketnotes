@@ -1,18 +1,32 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
-  margin: 28px 0 ;
+export const Container = styled.div`
+  width: '100%';
+  display: flex;
+  align-items: center;
 
-  > h2 {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+  margin-bottom: 8px;
+  border-radius: 10px;
 
-    padding-bottom: 16px;
-    margin-bottom: 24px;
+  color: ${({ theme }) => theme.COLORS.GRAY_300};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  
+  > svg {
+      margin-left: 16px;
+  }
 
-    color: ${({ theme }) => theme.COLORS.GRAY_100};
-    font-size: 20px;
-    font-weight: 400;
+  > input {
+      height: 56px;
+      width: 100%;
+
+      padding: 12px;
+
+      color: ${({ theme }) => theme.COLORS.WHITE};
+      background: transparent;
+      border: none;
+
+      &:placeholder {
+        color: ${({ theme }) => theme.COLORS.GRAY_300};
+      }
   }
 `;
