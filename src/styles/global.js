@@ -8,10 +8,10 @@ export default createGlobalStyle`
   }
 
   body {
+    -webkit-font-smoothing: antialised;
+    
     color: ${({ theme }) => theme.COLORS.WHITE};
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-
-    -webkit-font-smoothing: antialised;
   }
 
   body, input, button, textarea {
